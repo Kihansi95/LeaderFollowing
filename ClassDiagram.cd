@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BaseGameEntity" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAABEAAAggAAkAEIMgAggQASAAAAAABAUggkAAgA=</HashCode>
+      <FileName>BaseGameEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWorld" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Ag0gAAIIgAkCgAQAAEMRiELgAEAakcIAIDCKAACxIKo=</HashCode>
+      <FileName>GameWorld.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovingEntity" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIgAAAAFIGAQgAAgAAAEAIQBAAAAAAAAAAgAAyCEiAA=</HashCode>
+      <FileName>MovingEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Obstacle" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAABAACAEAAAA=</HashCode>
+      <FileName>Obstacle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParamLoader" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKFIgIkAAQGAIQAYBBoUQAAECgEBAFCQVAQFIAQQAAI=</HashCode>
+      <FileName>ParamLoader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Path" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQACAAAgEABAIAAAQAAAAAAAACAAQQAhAAABBAAAA=</HashCode>
+      <FileName>Path.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteeringBehavior" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JJgHBCQt4CUMPUoAvTiaoMP0DGY+LaGUcEWsExmagsI=</HashCode>
+      <FileName>SteeringBehaviors.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vehicle" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBBAAAAJIAAQAAAAAAgAiABAAoAyAAABEgIACAAAA=</HashCode>
+      <FileName>Vehicle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="C2DMatrix" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABBAAAAAAABABIIAAAAEAAEAIAAAEAEAAAAAAA=</HashCode>
+      <FileName>2D\C2DMatrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InvertedAABBox2D" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAABAAgAASAAAAAAAIAgAACBCAgAAIEAA=</HashCode>
+      <FileName>2D\InvertedAABBox2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wall2D" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAYAAAAAEAAAAAAAAAAACAgAAAIAAAAABCwAQEIAAA=</HashCode>
+      <FileName>2D\Wall2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoList&lt;T&gt;" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAEAAAAAAAAAAAAAIgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>misc\autolist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CellSpacePartition&lt;entity&gt;" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UIAAAgASABAAAAAAAAAAAAAwAAAAAAAQAIBAAAIAAYg=</HashCode>
+      <FileName>misc\CellSpacePartition.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cgdi" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DEUKYCAAQAIAhCzaBDEByAiWhCxBQySYTEawkgCDAAk=</HashCode>
+      <FileName>misc\Cgdi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FrameCounter" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAIAAAACAABAAAAAQAAAAAAAAAAAgAQgAgAAAAAAA=</HashCode>
+      <FileName>misc\FrameCounter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iniFileLoaderBase" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQACAABIAAAAIAAAAgEAAAAIAQAAAAABAABAABCADA=</HashCode>
+      <FileName>misc\iniFileLoaderBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriorityQ&lt;T&gt;" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABEIAAkAAAAQIACEAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>misc\PriorityQueue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriorityQLow&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAABAIAAgAAAAQIACEAAAAAAAAAAIgAAAAAA=</HashCode>
+      <FileName>misc\PriorityQueue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndexedPriorityQLow&lt;KeyType&gt;" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAABAIAAgAAAAQAACEACBAAAQAAAIAQAAAAA=</HashCode>
+      <FileName>misc\PriorityQueue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Smoother&lt;T&gt;" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAEAAAAAAAAAAAAAQEAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>misc\Smoother.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeToString" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>misc\TypeToString.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrudeTimer" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAACAAAAAAAAAAAAIAQAAgAAAAAAA=</HashCode>
+      <FileName>Time\CrudeTimer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PrecisionTimer" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBACABEAgqAAACABACJACAABAAYBAAAAAAAAgACgAAA=</HashCode>
+      <FileName>Time\PrecisionTimer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regulator" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAIAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Time\Regulator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Vector2D" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAFBAIEAACAQlBCQAAAABAAABgAAAAAAA=</HashCode>
+      <FileName>2D\Vector2D.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Cell&lt;entity&gt;" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAABAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>misc\CellSpacePartition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="ObIt" Collapsed="true">
+    <Position X="6" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameWorld.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="span_type" Collapsed="true">
+    <Position X="7.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAg=</HashCode>
+      <FileName>2D\geometry.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_enum_0018_1" Collapsed="true">
+    <Position X="6" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>2D\Vector2D.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
