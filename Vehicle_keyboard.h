@@ -2,10 +2,10 @@
 #include "Vehicle.h"
 
 
-class Vehicle_keyboard : public Vehicle {
+class Vehicle_Keyboard : public Vehicle {
 public:
 
-    Vehicle_keyboard( GameWorld* world,
+    Vehicle_Keyboard( GameWorld* world,
         Vector2D position,
         double rotation,
         Vector2D velocity,
@@ -20,7 +20,7 @@ public:
     void setForce( Vector2D force ) {
         force_direction = force;
     }
-    ~Vehicle_keyboard();
+    ~Vehicle_Keyboard();
 
 private:
     Vector2D force_direction;

@@ -1,9 +1,9 @@
-﻿#include "Vehicle_keyboard.h"
+﻿#include "Vehicle_Keyboard.h"
 #include "GameWorld.h"
 #include "SteeringBehaviors.h"
 
 
-Vehicle_keyboard::Vehicle_keyboard (
+Vehicle_Keyboard::Vehicle_Keyboard (
     GameWorld* world,
     Vector2D position,
     double rotation,
@@ -23,16 +23,15 @@ Vehicle_keyboard::Vehicle_keyboard (
         max_speed,
         max_turn_rate,
         scale ) {
-    Vector2D ini  (0, 0);
-    Vehicle_keyboard::SetScale( Vector2D( 10, 10 ) );
-    Vehicle_keyboard::setForce(ini);
-    Vehicle_keyboard::SetMaxSpeed( 100 );
-    Vehicle_keyboard::SetMaxForce( 300 );
+    Vehicle_Keyboard::SetScale( Vector2D( 10, 10 ) );
+    Vehicle_Keyboard::setForce( Vector2D( 0, 0 ) );
+    Vehicle_Keyboard::SetMaxSpeed( 100 );
+    Vehicle_Keyboard::SetMaxForce( 300 );
 }
 
-Vehicle_keyboard::~Vehicle_keyboard() {}
+Vehicle_Keyboard::~Vehicle_Keyboard() {}
 
-void Vehicle_keyboard::Update( double time_elapsed ) {
+void Vehicle_Keyboard::Update( double time_elapsed ) {
     //update the time elapsed
     m_dTimeElapsed = time_elapsed;
 

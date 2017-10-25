@@ -21,7 +21,7 @@
 #include "BaseGameEntity.h"
 #include "EntityFunctionTemplates.h"
 #include "vehicle.h"
-#include "Vehicle_keyboard.h"
+#include "Vehicle_Keyboard.h"
 
 
 class Obstacle;
@@ -63,7 +63,7 @@ private:
   double                        m_dAvFrameTime;
 
   // The vehicle_keyboard
-  Vehicle_keyboard*             m_vehicle_keyboard;
+  Vehicle_Keyboard*             m_vehicle_keyboard;
 
 
   //flags to turn aids and obstacles etc on/off

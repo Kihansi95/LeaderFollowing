@@ -18,7 +18,7 @@
 #include <list>
 #include "Follower.h"
 #include "Leader.h"
-#include "Vehicle_keyboard.h"
+#include "Vehicle_Keyboard.h"
 using std::list;
 
 
@@ -74,7 +74,7 @@ GameWorld::GameWorld(int cx, int cy):
 
     */
 
-   m_vehicle_keyboard = new Vehicle_keyboard( this,
+   m_vehicle_keyboard = new Vehicle_Keyboard( this,
         SpawnPos, //initial position
         RandFloat() * TwoPi, //start rotation
         Vector2D( 0, 0 ), //velocity
@@ -319,6 +319,7 @@ void GameWorld::HandleKeyPresses(WPARAM wParam) {
         }
         break;
 
+    // Handle directions of the Vehicle_Keyboard
     case 'Z' :
         force = Vector2D( 0, -1 );
         m_vehicle_keyboard->setForce( force );
