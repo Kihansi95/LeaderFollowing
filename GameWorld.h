@@ -21,6 +21,7 @@
 #include "BaseGameEntity.h"
 #include "EntityFunctionTemplates.h"
 #include "vehicle.h"
+#include "Vehicle_keyboard.h"
 
 
 class Obstacle;
@@ -59,7 +60,10 @@ private:
   Vector2D                      m_vCrosshair;
 
   //keeps track of the average FPS
-  double                         m_dAvFrameTime;
+  double                        m_dAvFrameTime;
+
+  // The vehicle_keyboard
+  Vehicle_keyboard*             m_vehicle_keyboard;
 
 
   //flags to turn aids and obstacles etc on/off

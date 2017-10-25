@@ -74,7 +74,7 @@ GameWorld::GameWorld(int cx, int cy):
 
     */
 
-    Vehicle_keyboard* leader = new Vehicle_keyboard( this,
+   m_vehicle_keyboard = new Vehicle_keyboard( this,
         SpawnPos, //initial position
         RandFloat() * TwoPi, //start rotation
         Vector2D( 0, 0 ), //velocity
@@ -84,8 +84,8 @@ GameWorld::GameWorld(int cx, int cy):
         Prm.MaxTurnRatePerSecond, //max turn rate
         Prm.VehicleScale ); //scale
 
-    m_Vehicles.push_back( leader );
-    m_pCellSpace->AddEntity( leader );
+    m_Vehicles.push_back( m_vehicle_keyboard );
+    m_pCellSpace->AddEntity( m_vehicle_keyboard );
 
     Vector2D offset( -50, 0 ); // offset
 
@@ -266,6 +266,8 @@ void GameWorld::SetCrosshair(POINTS p) {
 //------------------------- HandleKeyPresses -----------------------------
 void GameWorld::HandleKeyPresses(WPARAM wParam) {
 
+    Vector2D force;
+
     switch (wParam) {
     case 'U': {
         delete m_pPath;
@@ -315,6 +317,23 @@ void GameWorld::HandleKeyPresses(WPARAM wParam) {
                 m_Vehicles[i]->Steering()->ObstacleAvoidanceOn();
             }
         }
+        break;
+
+    case 'Z' :
+        force = Vector2D( 1, 0 );
+        m_vehicle_keyboard->setForce( force );
+        break;
+    case 'Q':
+        force = Vector2D( 0, -1 );
+        m_vehicle_keyboard->setForce( force );
+        break;
+    case 'D':
+        force = Vector2D( 0, 1 );
+        m_vehicle_keyboard->setForce( force );
+        break;
+    case 'S':
+        force = Vector2D( -1, 0 );
+        m_vehicle_keyboard->setForce( force );
         break;
 
     }//end switch

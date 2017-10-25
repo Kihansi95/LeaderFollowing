@@ -23,12 +23,11 @@ Vehicle_keyboard::Vehicle_keyboard (
         max_speed,
         max_turn_rate,
         scale ) {
-    Vector2D ini  (0, 0);
+    Vector2D ini  (0.1, 0);
     Vehicle_keyboard::setForce(ini);
 }
 
 Vehicle_keyboard::~Vehicle_keyboard() {}
-
 
 void Vehicle_keyboard::Update( double time_elapsed ) {
     //update the time elapsed

@@ -161,8 +161,6 @@
     <ClInclude Include="EntityFunctionTemplates.h" />
     <ClInclude Include="Follower.h" />
     <ClInclude Include="GameWorld.h" />
-    <ClInclude Include="InputConstants.h" />
-    <ClInclude Include="InputHandler.h" />
     <ClInclude Include="Leader.h" />
     <ClInclude Include="misc\autolist.h" />
     <ClInclude Include="misc\CellSpacePartition.h" />
@@ -194,7 +192,6 @@
     <ClCompile Include="2D\Vector2d.cpp" />
     <ClCompile Include="Follower.cpp" />
     <ClCompile Include="GameWorld.cpp" />
-    <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="Leader.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="misc\Cgdi.cpp" />
