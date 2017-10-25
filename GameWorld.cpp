@@ -18,6 +18,7 @@
 #include <list>
 #include "Follower.h"
 #include "Leader.h"
+#include "Vehicle_keyboard.h"
 using std::list;
 
 
@@ -56,6 +57,7 @@ GameWorld::GameWorld(int cx, int cy):
     cy / 2.0 + RandomClamped() * cy / 2.0 );
 
     // Definition of the leader :
+    /*
     Leader* leader = new Leader( this,
         SpawnPos, //initial position
         RandFloat() * TwoPi, //start rotation
@@ -68,6 +70,21 @@ GameWorld::GameWorld(int cx, int cy):
 
     m_Vehicles.push_back( leader );
     //add it to the cell subdivision
+    m_pCellSpace->AddEntity( leader );
+
+    */
+
+    Vehicle_keyboard* leader = new Vehicle_keyboard( this,
+        SpawnPos, //initial position
+        RandFloat() * TwoPi, //start rotation
+        Vector2D( 0, 0 ), //velocity
+        1.0, //mass
+        Prm.MaxSteeringForce, //max force
+        Prm.MaxSpeed, //max velocity
+        Prm.MaxTurnRatePerSecond, //max turn rate
+        Prm.VehicleScale ); //scale
+
+    m_Vehicles.push_back( leader );
     m_pCellSpace->AddEntity( leader );
 
     Vector2D offset( -50, 0 ); // offset

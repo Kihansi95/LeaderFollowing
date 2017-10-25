@@ -2,10 +2,7 @@
 #include "Vehicle.h"
 
 
-class GameWorld;
-class SteeringBehavior;
-
-class Vehicle_keyboard : public Vehicle{
+class Vehicle_keyboard : public Vehicle {
 public:
 
     Vehicle_keyboard( GameWorld* world,

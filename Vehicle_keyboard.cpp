@@ -1,6 +1,9 @@
 ﻿#include "Vehicle_keyboard.h"
+#include "GameWorld.h"
+#include "SteeringBehaviors.h"
 
-Vehicle_keyboard::Vehicle_keyboard(
+
+Vehicle_keyboard::Vehicle_keyboard (
     GameWorld* world,
     Vector2D position,
     double rotation,
@@ -23,6 +26,9 @@ Vehicle_keyboard::Vehicle_keyboard(
     Vector2D ini  (0, 0);
     Vehicle_keyboard::setForce(ini);
 }
+
+Vehicle_keyboard::~Vehicle_keyboard() {}
+
 
 void Vehicle_keyboard::Update( double time_elapsed ) {
     //update the time elapsed
