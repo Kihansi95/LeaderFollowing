@@ -320,19 +320,19 @@ void GameWorld::HandleKeyPresses(WPARAM wParam) {
         break;
 
     case 'Z' :
-        force = Vector2D( 1, 0 );
-        m_vehicle_keyboard->setForce( force );
-        break;
-    case 'Q':
         force = Vector2D( 0, -1 );
         m_vehicle_keyboard->setForce( force );
         break;
+    case 'Q':
+        force = Vector2D( -1, 0 );
+        m_vehicle_keyboard->setForce( force );
+        break;
     case 'D':
-        force = Vector2D( 0, 1 );
+        force = Vector2D( 1, 0 );
         m_vehicle_keyboard->setForce( force );
         break;
     case 'S':
-        force = Vector2D( -1, 0 );
+        force = Vector2D( 0, 1 );
         m_vehicle_keyboard->setForce( force );
         break;
 

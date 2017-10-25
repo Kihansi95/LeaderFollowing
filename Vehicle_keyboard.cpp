@@ -23,8 +23,11 @@ Vehicle_keyboard::Vehicle_keyboard (
         max_speed,
         max_turn_rate,
         scale ) {
-    Vector2D ini  (0.1, 0);
+    Vector2D ini  (0, 0);
+    Vehicle_keyboard::SetScale( Vector2D( 10, 10 ) );
     Vehicle_keyboard::setForce(ini);
+    Vehicle_keyboard::SetMaxSpeed( 100 );
+    Vehicle_keyboard::SetMaxForce( 300 );
 }
 
 Vehicle_keyboard::~Vehicle_keyboard() {}
@@ -42,7 +45,7 @@ void Vehicle_keyboard::Update( double time_elapsed ) {
 
     //calculate the combined force from each steering behavior in the 
     //vehicle's list
-    SteeringForce = force_direction*m_dMaxForce;
+    SteeringForce = force_direction*MaxForce();
 
     //Acceleration = Force/Mass
     Vector2D acceleration = SteeringForce / m_dMass;
